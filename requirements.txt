@@ -1,6 +1,9 @@
 Django==1.6.1
+apiclient==1.0.2
 django-crispy-forms==1.4.0
+gdata==2.0.18
 google-api-python-client==1.2
 httplib2==0.8
 psycopg2==2.5.2
+urllib3==1.7.1
 wsgiref==0.1.2
