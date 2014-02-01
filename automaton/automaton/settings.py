@@ -36,6 +36,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'domain',
+    'runner',
+    'crispy_forms',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,8 +60,10 @@ WSGI_APPLICATION = 'automaton.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': "boomtown",
+        'USER': 'automaton',
+        'PASSWORD': 'boomtown'
     }
 }
 
@@ -80,3 +85,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'templates'),
+)
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "files")
+MEDIA_URL = '/files/'
+
+LOGIN_URL = "/login"
+
+CRISPY_TEMPLATE_PACK = 'uni_form'
