@@ -9,7 +9,6 @@ __author__ = 'jeremymorgan'
 
 from django.core.files.uploadhandler import FileUploadHandler
 
-
 class CustomUploadHandler(FileUploadHandler):
     def __init__(self, request = None, upload_to = tempfile.gettempdir()):
         self.upload_to = upload_to
@@ -41,3 +40,27 @@ class TestCaseForm(forms.ModelForm):
         self.helper.form_method = "post"
 
         self.helper.add_input(Submit('submit', 'Submit'))
+
+class TestSuiteInitForm(forms.Form):
+    def __init__(self, data=None, *args, **kwargs):
+        super(TestSuiteInitForm, self).__init__(data, *args, **kwargs)
+        self.helper = FormHelper()
+        self.helper.form_method = "post"
+
+        self.helper.add_input(Submit('submit', 'Submit'))
+
+    url = forms.URLField()
+    user_email = forms.EmailField()
+    beta = forms.BooleanField()
+    wp_login = forms.CharField(required=False)
+    wp_password = forms.CharField(required=False, widget=forms.PasswordInput())
+
+    def clean(self):
+        cleaned_data = super(TestSuiteInitForm, self).clean()
+        is_beta = cleaned_data['beta']
+        login = cleaned_data['wp_login']
+        password = cleaned_data['wp_password']
+        if is_beta and not login and not password:
+            raise forms.ValidationError("If the URL is a beta site then WordPress credentials are required.")
+
+        return cleaned_data
