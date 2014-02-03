@@ -1,0 +1,38 @@
+[
+    {
+        "pk": 1,
+        "model": "auth.user",
+        "fields": {
+            "username": "admin-desiree",
+            "first_name": "Desiree",
+            "last_name": "Smejkal",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2014-02-01T02:15:38.510Z",
+            "groups": [],
+            "user_permissions": [],
+            "password": "pbkdf2_sha256$12000$ss0Shj6TfGY8$6DpAQjApTnCMDzncFoufMsARNxWV8fnW3I5Q/czYuWg=",
+            "email": "desiree@boomtownroi.com",
+            "date_joined": "2014-02-01T02:15:38.510Z"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.user",
+        "fields": {
+            "username": "admin-jeremy",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2014-02-03T20:03:51.438Z",
+            "groups": [],
+            "user_permissions": [],
+            "password": "pbkdf2_sha256$12000$wPSU2GEmNQji$+NXnYLbEtXpwxgqyK1A6ZgjstvMOcIDZCfh0WM6j9X8=",
+            "email": "jeremy@boomtownroi.com",
+            "date_joined": "2014-02-03T20:03:51.438Z"
+        }
+    }
+]
