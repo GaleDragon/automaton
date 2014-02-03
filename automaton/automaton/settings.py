@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'domain',
     'runner',
     'crispy_forms',
+    'djcelery',
 )
 
 MIDDLEWARE_CLASSES = (
