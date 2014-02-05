@@ -28,21 +28,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/runner/views.py">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domain/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="68" selection-start="664" selection-end="664" vertical-scroll-proportion="0.36635005" vertical-offset="0" max-vertical-offset="737">
+            <state line="83" column="30" selection-start="3679" selection-end="3679" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1140">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runner/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="31" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <marker date="1391617352000" expanded="true" signature="167:425" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runner/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="44" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="870">
+              <folding>
+                <marker date="1391619470000" expanded="true" signature="0:297" placeholder="import ..." />
+                <marker date="1391619470000" expanded="true" signature="1823:2034" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runner/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="1" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/runner/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="35" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="975">
+            <state line="53" column="30" selection-start="1796" selection-end="1796" vertical-scroll-proportion="0.6270718" vertical-offset="251" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -58,27 +88,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/root.html" />
-        <option value="$PROJECT_DIR$/automaton/urls.py" />
-        <option value="$PROJECT_DIR$/automaton/celery.py" />
-        <option value="dbtable:/37f1d7f9/3af324ff-a5dd-4454-a6fd-b4a0374615a3/boomtown.public.domain_credential" />
         <option value="dbtable:/37f1d7f9/3af324ff-a5dd-4454-a6fd-b4a0374615a3/boomtown.public.auth_user" />
         <option value="dbtable:/37f1d7f9/3af324ff-a5dd-4454-a6fd-b4a0374615a3/boomtown.public.runner_testrunner" />
         <option value="$PROJECT_DIR$/files/tests/2014/02/03/bmc_chessboard.py" />
-        <option value="$PROJECT_DIR$/runner/models.py" />
         <option value="$PROJECT_DIR$/runner/tasks.py" />
         <option value="$PROJECT_DIR$/automaton/__init__.py" />
         <option value="$PROJECT_DIR$/automaton/settings.py" />
         <option value="$PROJECT_DIR$/domain/models.py" />
         <option value="$PROJECT_DIR$/domain/fixtures/initial_data.json" />
-        <option value="$PROJECT_DIR$/domain/views.py" />
         <option value="$PROJECT_DIR$/runner/forms.py" />
+        <option value="$PROJECT_DIR$/runner/async.py" />
+        <option value="$PROJECT_DIR$/runner/models.py" />
+        <option value="db-console:/37f1d7f9/3af324ff-a5dd-4454-a6fd-b4a0374615a3/" />
+        <option value="$PROJECT_DIR$/runner/urls.py" />
+        <option value="$PROJECT_DIR$/runner/templates/results.html" />
         <option value="$PROJECT_DIR$/runner/views.py" />
+        <option value="$PROJECT_DIR$/domain/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="39" />
+    <option name="x" value="10" />
     <option name="y" value="22" />
     <option name="width" value="1400" />
     <option name="height" value="860" />
@@ -174,23 +204,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automaton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automaton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automaton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automaton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fixtures" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="Database.TableEditor.Splitter" value="0.69974554" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$USER_HOME$/virtual_environments/parallaxian/bin/python3.3" />
-    <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
+    <property name="Database.TableEditor.Splitter" value="0.69974554" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="last.edited.regexp" value="1" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -431,14 +494,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="22" width="1400" height="860" extended-state="0" />
+    <frame x="10" y="22" width="1400" height="860" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.62352943" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19214286" sideWeight="0.67058825" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3764706" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -446,9 +508,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -471,33 +535,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/root.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="7" selection-start="677" selection-end="677" vertical-scroll-proportion="0.3988183" vertical-offset="0" max-vertical-offset="677">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runner/static/images/sprite.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runner/static/img/ok.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runner/static/images/bg-input-focus.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runner/static/images/bg-input.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/runner/static/img/uni-form-logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -505,18 +542,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/automaton/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runner/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.28493893" vertical-offset="0" max-vertical-offset="737">
-          <folding>
-            <element signature="e#29#77#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="14" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.28493893" vertical-offset="0" max-vertical-offset="737" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/automaton/settings.py">
@@ -533,47 +564,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domain/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="62" selection-start="3373" selection-end="3373" vertical-scroll-proportion="0.6947083" vertical-offset="313" max-vertical-offset="1095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/runner/templates/runner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runner/async.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="17" selection-end="17" vertical-scroll-proportion="0.04070556" vertical-offset="0" max-vertical-offset="737">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runner/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="281" selection-end="281" vertical-scroll-proportion="0.12211669" vertical-offset="0" max-vertical-offset="737">
+        <state line="7" column="31" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding>
+            <marker date="1391617352000" expanded="true" signature="167:425" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://db-console:/37f1d7f9/3af324ff-a5dd-4454-a6fd-b4a0374615a3/">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="21" selection-start="49" selection-end="49" vertical-scroll-proportion="0.034642033" vertical-offset="0" max-vertical-offset="433">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domain/fixtures/initial_data.json">
+    <entry file="file://$PROJECT_DIR$/domain/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="854" selection-end="854" vertical-scroll-proportion="0.56802243" vertical-offset="0" max-vertical-offset="713">
+        <state line="9" column="35" selection-start="360" selection-end="360" vertical-scroll-proportion="0.18317503" vertical-offset="0" max-vertical-offset="737">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runner/forms.py">
+    <entry file="file://$PROJECT_DIR$/runner/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="35" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="975">
+        <state line="10" column="1" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runner/templates/results.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runner/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="68" selection-start="664" selection-end="664" vertical-scroll-proportion="0.36635005" vertical-offset="0" max-vertical-offset="737">
+        <state line="48" column="44" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="870">
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1391619470000" expanded="true" signature="0:297" placeholder="import ..." />
+            <marker date="1391619470000" expanded="true" signature="1823:2034" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/fixtures/initial_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="25" selection-start="722" selection-end="734" vertical-scroll-proportion="0.5096012" vertical-offset="0" max-vertical-offset="677">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="30" selection-start="3679" selection-end="3679" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runner/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="30" selection-start="1796" selection-end="1796" vertical-scroll-proportion="0.6270718" vertical-offset="251" max-vertical-offset="975">
+          <folding />
         </state>
       </provider>
     </entry>
