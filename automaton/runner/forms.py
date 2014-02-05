@@ -51,7 +51,7 @@ class TestSuiteInitForm(forms.Form):
 
     url = forms.URLField()
     user_email = forms.EmailField()
-    beta = forms.BooleanField()
+    beta = forms.ChoiceField(widget=forms.RadioSelect(), choices=(('betaTrue', 'Site is in Beta'),('betaFalse', 'Site is not in Beta')))
     wp_login = forms.CharField(required=False)
     wp_password = forms.CharField(required=False, widget=forms.PasswordInput())
 
