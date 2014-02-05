@@ -1,12 +1,9 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import NoSuchElementException
-import unittest, time, re
+from selenium.common.exceptions import NoSuchElementException, NoAlertPresentException
+import unittest
+from config import ConfigurationMixin
 import string
 import random
-import names
 
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
@@ -16,10 +13,10 @@ def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
 email = "des+" + id_generator() + "@boomtownroi.com"
 
 
-firstname = names.get_first_name()
-lastname = names.get_last_name()
+firstname = "Jeremy"
+lastname = "Morgan"
 
-class WdMobileReg(unittest.TestCase):
+class WdMobileReg(unittest.TestCase, ConfigurationMixin):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
@@ -31,8 +28,8 @@ class WdMobileReg(unittest.TestCase):
     def test_wd_mobile_reg(self):
         driver = self.driver
         driver.get(self.base_url)
-        driver.find_element_by_id("user_login").send_keys("cobblestone")
-        driver.find_element_by_id("user_pass").send_keys("4m7Md6UOcb9i")
+        driver.find_element_by_id("user_login").send_keys(self.wp_login)
+        driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
         driver.find_element_by_id("wp-submit").click()
         driver.get(self.base_url + "/m/home/#registerPanel")
         #driver.find_element_by_css_selector("a[title=\"Sign Up\"]").click()
@@ -41,7 +38,7 @@ class WdMobileReg(unittest.TestCase):
         driver.find_element_by_id("reg-lname").clear()
         driver.find_element_by_id("reg-lname").send_keys(lastname)
         driver.find_element_by_id("reg-email").clear()
-        driver.find_element_by_id("reg-email").send_keys(email)
+        driver.find_element_by_id("reg-email").send_keys(self.email)
         driver.find_element_by_id("reg-phone").clear()
         driver.find_element_by_id("reg-phone").send_keys("123566463")
         driver.find_element_by_id("reg-password").clear()
@@ -50,12 +47,12 @@ class WdMobileReg(unittest.TestCase):
     
     def is_element_present(self, how, what):
         try: self.driver.find_element(by=how, value=what)
-        except NoSuchElementException, e: return False
+        except NoSuchElementException: return False
         return True
     
     def is_alert_present(self):
         try: self.driver.switch_to_alert()
-        except NoAlertPresentException, e: return False
+        except NoAlertPresentException: return False
         return True
     
     def close_alert_and_get_its_text(self):

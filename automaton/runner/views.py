@@ -5,7 +5,7 @@ from runner.forms import TestSuiteInitForm
 from django import http
 from django.core.urlresolvers import reverse
 from django.contrib.auth.decorators import login_required
-from .models import TestRunner
+from .models import TestRunner, TestProfile
 from django.db.models import Max
 
 # Create your views here.
@@ -14,17 +14,20 @@ def runner_view(request):
     if request.method == "POST":
         form = TestSuiteInitForm(request.POST)
         if form.is_valid():
+            args = [form.cleaned_data['url'], form.cleaned_data['user_email']]
+            if form.cleaned_data['beta']:
+                args += ["--beta", form.cleaned_data['wp_login'], form.cleaned_data['wp_password']]
             test_files = os.listdir("tests")
             open_processes = list()
             for test in test_files:
                 if test[-3:] == ".py":
-                    process = subprocess.Popen(['python', test], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                    process = subprocess.Popen(['python', os.path.join("tests", test)]+args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
                     open_processes.append(process)
+            suite = TestProfile(runner=request.user)
+            suite.save()
             for p in open_processes:
                 out, err = p.communicate()
-                t = TestRunner(runner=request.user, done=True)
-                last_run = TestRunner.objects.all().aggregate(Max('index'))["index__max"]
-                t.index = last_run or 0 + 1
+                t = TestRunner(test_run=suite)
                 if err:
                     t.success = False
                     t.message = err
@@ -35,8 +38,9 @@ def runner_view(request):
                         t.success = True
                     else:
                         t.success = True
+                        t.message = "Success."
                 t.save()
-            return http.HttpResponseRedirect( reverse("results", args=("index", t.index) ) )
+            return http.HttpResponseRedirect( reverse("results", kwargs={"index": suite.pk} ) )
         else:
             return render(request, "runner.html", {"runner_form": form})
     else:
@@ -47,6 +51,6 @@ def runner_view(request):
 def results(request, index=None):
     if not index:
         return http.HttpResponseBadRequest()
-    test_results = TestRunner.objects.filter(runner=request.user, index=index)
-    return render(request, "results.html", {"results":test_results})
+    profile = TestProfile.objects.get(pk=index, runner=request.user)
+    return render(request, "results.html", {"results":profile.testrunner_set})
 
