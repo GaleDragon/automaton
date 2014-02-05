@@ -5,5 +5,8 @@ from django.dispatch import Signal
 # Create your models here.
 class TestRunner(models.Model):
     runner = models.ForeignKey(User)
+    index = models.IntegerField()
     date_started = models.DateTimeField(auto_now_add=True)
-    test_file = models.FileField(upload_to="tests/%Y/%m/%d")
+    done = models.BooleanField(default=False)
+    success = models.BooleanField(default=False)
+    message = models.TextField()

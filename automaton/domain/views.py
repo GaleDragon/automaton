@@ -37,7 +37,7 @@ def init_auth(request):
     import os
     print os.getcwd()
     flow = flow_from_clientsecrets(
-        'automaton/domain/google_api/client_secrets.json',
+        'domain/google_api/client_secrets.json',
         SCOPE,
         redirect_uri=redirect)
     # The state parameter to verify that the request is not a Cross Site Request Forgery
@@ -52,7 +52,7 @@ def callback_auth(request):
     # Rebuilds a similar flow object to later authorize from Google's callback
     redirect = request.build_absolute_uri( reverse("auth_callback") )
     flow = flow_from_clientsecrets(
-        'automaton/domain/google_api/client_secrets.json',
+        'domain/google_api/client_secrets.json',
         SCOPE,
         redirect_uri=redirect)
     if xsrfutil.validate_token(SECRET_KEY, request.REQUEST['state'], 7337):
