@@ -11,6 +11,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/automaton$Unittests_in_RegWD.coverage" NAME="Unittests in RegWD Coverage Results" MODIFIED="1391635098470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -28,21 +31,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domain/views.py">
+      <file leaf-file-name="wdRegister.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/wdRegister.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="30" selection-start="3679" selection-end="3679" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1140">
+            <state line="95" column="20" selection-start="4196" selection-end="4196" vertical-scroll-proportion="0.0" vertical-offset="1045" max-vertical-offset="1530">
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/runner/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="52" selection-start="491" selection-end="491" vertical-scroll-proportion="0.34020618" vertical-offset="0" max-vertical-offset="485">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runner/models.py">
+      <file leaf-file-name="config.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="31" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+            <state line="8" column="27" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
               <folding>
-                <marker date="1391617352000" expanded="true" signature="167:425" placeholder="..." />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,28 +65,29 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runner/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="44" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="870">
+            <state line="51" column="17" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.0" vertical-offset="443" max-vertical-offset="930">
               <folding>
-                <marker date="1391619470000" expanded="true" signature="0:297" placeholder="import ..." />
-                <marker date="1391619470000" expanded="true" signature="1823:2034" placeholder="..." />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runner/urls.py">
+      <file leaf-file-name="wdSaveSearch.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/wdSaveSearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="1" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-              <folding />
+            <state line="34" column="70" selection-start="1158" selection-end="1170" vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="1245">
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forms.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runner/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="30" selection-start="1796" selection-end="1796" vertical-scroll-proportion="0.6270718" vertical-offset="251" max-vertical-offset="975">
+            <state line="58" column="31" selection-start="2086" selection-end="2112" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -88,22 +103,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="dbtable:/37f1d7f9/3af324ff-a5dd-4454-a6fd-b4a0374615a3/boomtown.public.auth_user" />
-        <option value="dbtable:/37f1d7f9/3af324ff-a5dd-4454-a6fd-b4a0374615a3/boomtown.public.runner_testrunner" />
-        <option value="$PROJECT_DIR$/files/tests/2014/02/03/bmc_chessboard.py" />
         <option value="$PROJECT_DIR$/runner/tasks.py" />
         <option value="$PROJECT_DIR$/automaton/__init__.py" />
         <option value="$PROJECT_DIR$/automaton/settings.py" />
         <option value="$PROJECT_DIR$/domain/models.py" />
         <option value="$PROJECT_DIR$/domain/fixtures/initial_data.json" />
-        <option value="$PROJECT_DIR$/runner/forms.py" />
         <option value="$PROJECT_DIR$/runner/async.py" />
-        <option value="$PROJECT_DIR$/runner/models.py" />
         <option value="db-console:/37f1d7f9/3af324ff-a5dd-4454-a6fd-b4a0374615a3/" />
         <option value="$PROJECT_DIR$/runner/urls.py" />
         <option value="$PROJECT_DIR$/runner/templates/results.html" />
-        <option value="$PROJECT_DIR$/runner/views.py" />
         <option value="$PROJECT_DIR$/domain/views.py" />
+        <option value="$PROJECT_DIR$/runner/forms.py" />
+        <option value="$PROJECT_DIR$/tests/run_all.py" />
+        <option value="$PROJECT_DIR$/runner/models.py" />
+        <option value="$PROJECT_DIR$/runner/views.py" />
+        <option value="$PROJECT_DIR$/tests/wdRegister.py" />
+        <option value="$PROJECT_DIR$/tests/config.py" />
       </list>
     </option>
   </component>
@@ -139,7 +154,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -168,6 +182,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automaton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automaton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -183,24 +211,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="runner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="automaton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="automaton" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="runner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -238,6 +248,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,7 +271,32 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Django server.automaton">
+  <component name="RunManager" selected="Python tests.Unittests in RegWD">
+    <configuration default="false" name="Unittests in RegWD" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="automaton" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/wdRegister.py" />
+      <option name="CLASS_NAME" value="RegWD" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -345,29 +381,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="automaton" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -389,6 +402,29 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="automaton" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -463,9 +499,15 @@
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Django server.automaton" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in RegWD" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in RegWD" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
@@ -500,15 +542,15 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19214286" sideWeight="0.67058825" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12428571" sideWeight="0.67058825" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3764706" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -535,35 +577,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/runner/static/img/uni-form-logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automaton/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runner/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.28493893" vertical-offset="0" max-vertical-offset="737" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/automaton/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="54" selection-start="1360" selection-end="1360" vertical-scroll-proportion="-0.11940298" vertical-offset="808" max-vertical-offset="1545">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/runner/templates/runner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737" />
@@ -571,25 +584,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/runner/async.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="17" selection-end="17" vertical-scroll-proportion="0.04070556" vertical-offset="0" max-vertical-offset="737">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runner/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="31" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <folding>
-            <marker date="1391617352000" expanded="true" signature="167:425" placeholder="..." />
-          </folding>
-        </state>
+        <state line="2" column="0" selection-start="17" selection-end="17" vertical-scroll-proportion="0.04070556" vertical-offset="0" max-vertical-offset="737" />
       </provider>
     </entry>
     <entry file="dbDummy://db-console:/37f1d7f9/3af324ff-a5dd-4454-a6fd-b4a0374615a3/">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="49" selection-end="49" vertical-scroll-proportion="0.034642033" vertical-offset="0" max-vertical-offset="433">
-          <folding />
-        </state>
+        <state line="1" column="21" selection-start="49" selection-end="49" vertical-scroll-proportion="0.034642033" vertical-offset="0" max-vertical-offset="433" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/domain/urls.py">
@@ -599,33 +599,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runner/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/runner/templates/results.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runner/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="44" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="870">
-          <folding>
-            <marker date="1391619470000" expanded="true" signature="0:297" placeholder="import ..." />
-            <marker date="1391619470000" expanded="true" signature="1823:2034" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="737" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/domain/fixtures/initial_data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="722" selection-end="734" vertical-scroll-proportion="0.5096012" vertical-offset="0" max-vertical-offset="677">
+        <state line="23" column="25" selection-start="722" selection-end="734" vertical-scroll-proportion="0.5096012" vertical-offset="0" max-vertical-offset="677" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runner/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="1" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <folding />
         </state>
       </provider>
@@ -637,9 +623,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/wdPageLoad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="14" selection-start="267" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1395">
+          <folding>
+            <element signature="e#0#30#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/wdMobileReg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="17" selection-start="472" selection-end="483" vertical-scroll-proportion="-0.88659793" vertical-offset="700" max-vertical-offset="1200">
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/runner/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="30" selection-start="1796" selection-end="1796" vertical-scroll-proportion="0.6270718" vertical-offset="251" max-vertical-offset="975">
+        <state line="58" column="31" selection-start="2086" selection-end="2112" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/wdRegister.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="20" selection-start="4196" selection-end="4196" vertical-scroll-proportion="0.0" vertical-offset="608" max-vertical-offset="1530">
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="27" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runner/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="17" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.0" vertical-offset="443" max-vertical-offset="930">
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/wdSaveSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="70" selection-start="1158" selection-end="1170" vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="1245">
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runner/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="52" selection-start="491" selection-end="491" vertical-scroll-proportion="0.34020618" vertical-offset="0" max-vertical-offset="485">
           <folding />
         </state>
       </provider>

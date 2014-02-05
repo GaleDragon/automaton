@@ -51,16 +51,17 @@ class TestSuiteInitForm(forms.Form):
 
     url = forms.URLField()
     user_email = forms.EmailField()
-    beta = forms.ChoiceField(widget=forms.RadioSelect(), choices=(('betaTrue', 'Site is in Beta'),('betaFalse', 'Site is not in Beta')))
+    beta = forms.ChoiceField(widget=forms.RadioSelect(), choices=((True, 'Site is in Beta'),(False, 'Site is not in Beta')), initial=False)
     wp_login = forms.CharField(required=False)
     wp_password = forms.CharField(required=False, widget=forms.PasswordInput())
 
     def clean(self):
         cleaned_data = super(TestSuiteInitForm, self).clean()
-        is_beta = cleaned_data['beta']
+        production = cleaned_data['beta']
+        print production
         login = cleaned_data['wp_login']
         password = cleaned_data['wp_password']
-        if is_beta and not login and not password:
+        if not production and not login and not password:
             raise forms.ValidationError("If the URL is a beta site then WordPress credentials are required.")
 
         return cleaned_data

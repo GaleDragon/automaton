@@ -3,10 +3,12 @@ from django.contrib.auth.models import User
 from django.dispatch import Signal
 
 # Create your models here.
-class TestRunner(models.Model):
+class TestProfile(models.Model):
     runner = models.ForeignKey(User)
-    index = models.IntegerField()
     date_started = models.DateTimeField(auto_now_add=True)
+
+class TestRunner(models.Model):
+    test_run = models.ForeignKey(TestProfile)
     done = models.BooleanField(default=False)
     success = models.BooleanField(default=False)
-    message = models.TextField()
+    message = models.TextField(null=True, blank=True)
