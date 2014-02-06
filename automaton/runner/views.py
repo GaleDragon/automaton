@@ -20,7 +20,9 @@ def runner_view(request):
             test_files = os.listdir("tests")
             open_processes = list()
             for test in test_files:
-                if test[-3:] == ".py":
+                if test == "config.py":
+                    pass
+                elif test[-3:] == ".py":
                     process = subprocess.Popen(['python', os.path.join("tests", test)]+args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
                     open_processes.append(process)
             suite = TestProfile(runner=request.user)

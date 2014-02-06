@@ -1,9 +1,11 @@
+import sys, argparse
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, NoAlertPresentException
 import unittest
 from config import ConfigurationMixin
 import string
 import random
+import names
 
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
@@ -13,8 +15,8 @@ def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
 email = "des+" + id_generator() + "@boomtownroi.com"
 
 
-firstname = "Jeremy"
-lastname = "Morgan"
+firstname = names.get_first_name()
+lastname = names.get_last_name()
 
 class WdMobileReg(unittest.TestCase, ConfigurationMixin):
     def setUp(self):
@@ -71,4 +73,14 @@ class WdMobileReg(unittest.TestCase, ConfigurationMixin):
         self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
-    unittest.main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('url')
+    parser.add_argument('email')
+    parser.add_argument('--beta', action='store_true')
+    parser.add_argument('wp_login')
+    parser.add_argument('wp_password')
+    args = parser.parse_args()
+    test = WdMobileReg('test_wd_mobile_reg')
+    test.inject(args)
+    result = unittest.TestResult()
+    test.run(result)

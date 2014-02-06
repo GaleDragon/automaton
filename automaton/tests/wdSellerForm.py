@@ -1,9 +1,11 @@
+import sys, argparse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, NoAlertPresentException
 import unittest, time, re
+from config import ConfigurationMixin
 import string
 import random
 import names
@@ -19,7 +21,7 @@ email = "des+" + id_generator() + "@boomtownroi.com"
 firstname = names.get_first_name()
 lastname = names.get_last_name()
 
-class Seller(unittest.TestCase):
+class Seller(unittest.TestCase, ConfigurationMixin):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
@@ -31,8 +33,8 @@ class Seller(unittest.TestCase):
     def test_seller(self):
         driver = self.driver
         driver.get(self.base_url + "/")
-        driver.find_element_by_id("user_login").send_keys("cobblestone")
-        driver.find_element_by_id("user_pass").send_keys("4m7Md6UOcb9i")
+        driver.find_element_by_id("user_login").send_keys(self.wp_login)
+        driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
         driver.find_element_by_id("wp-submit").click()
         driver.find_element_by_link_text("Finance").click()
         driver.find_element_by_link_text("Sell").click()
@@ -46,7 +48,7 @@ class Seller(unittest.TestCase):
         driver.find_element_by_name("txtLastName").clear()
         driver.find_element_by_name("txtLastName").send_keys(lastname)
         driver.find_element_by_name("txtEmail").clear()
-        driver.find_element_by_name("txtEmail").send_keys(email)
+        driver.find_element_by_name("txtEmail").send_keys(self.email)
         driver.find_element_by_name("txtPhone").clear()
         driver.find_element_by_name("txtPhone").send_keys("5555555555")
         driver.find_element_by_name("txtPrice").clear()
@@ -80,4 +82,14 @@ class Seller(unittest.TestCase):
         self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
-    unittest.main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('url')
+    parser.add_argument('email')
+    parser.add_argument('--beta', action='store_true')
+    parser.add_argument('wp_login')
+    parser.add_argument('wp_password')
+    args = parser.parse_args()
+    test = Seller('test_seller')
+    test.inject(args)
+    result = unittest.TestResult()
+    test.run(result)
