@@ -1,11 +1,13 @@
+import sys, argparse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, NoAlertPresentException
+from config import ConfigurationMixin
 import unittest, time, re
 
-class PageLoad(unittest.TestCase):
+class PageLoad(unittest.TestCase, ConfigurationMixin):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
@@ -17,8 +19,8 @@ class PageLoad(unittest.TestCase):
     def test_page_load(self):
         driver = self.driver
         driver.get(self.base_url)
-        driver.find_element_by_id("user_login").send_keys("cobblestone")
-        driver.find_element_by_id("user_pass").send_keys("4m7Md6UOcb9i")
+        driver.find_element_by_id("user_login").send_keys(self.wp_login)
+        driver.find_element_by_id("user_pass").send_keys(self.wp_password)
         driver.find_element_by_id("wp-submit").click()
         driver.get(self.base_url + "/")
         self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "header.global-header"))
@@ -84,4 +86,14 @@ class PageLoad(unittest.TestCase):
         self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
-    unittest.main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('url')
+    parser.add_argument('email')
+    parser.add_argument('--beta', action='store_true')
+    parser.add_argument('wp_login')
+    parser.add_argument('wp_password')
+    args = parser.parse_args()
+    test = PageLoad('test_page_load')
+    test.inject(args)
+    result = unittest.TestResult()
+    test.run(result)

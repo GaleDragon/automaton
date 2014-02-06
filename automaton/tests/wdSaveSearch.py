@@ -1,9 +1,11 @@
+import sys, argparse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, NoAlertPresentException
 import unittest, time, re
+from config import ConfigurationMixin
 import string
 import random
 import names
@@ -19,7 +21,7 @@ email = "des+" + id_generator() + "@boomtownroi.com"
 firstname = names.get_first_name()
 lastname = names.get_last_name()
 
-class WdSaveSearch(unittest.TestCase):
+class WdSaveSearch(unittest.TestCase, ConfigurationMixin):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
@@ -31,8 +33,8 @@ class WdSaveSearch(unittest.TestCase):
     def test_wd_save_search(self):
         driver = self.driver
         driver.get(self.base_url + "/")
-        driver.find_element_by_id("user_login").send_keys("cobblestone")
-        driver.find_element_by_id("user_pass").send_keys("4m7Md6UOcb9i")
+        driver.find_element_by_id("user_login").send_keys(self.wp_login)
+        driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
         driver.find_element_by_id("wp-submit").click()
         driver.find_element_by_css_selector("h2[title=\"Price\"]").click()
         driver.find_element_by_id("search-max-price-input").click()
@@ -43,7 +45,7 @@ class WdSaveSearch(unittest.TestCase):
         driver.find_element_by_id("gobutton").click()
         driver.find_element_by_css_selector("span.show-inline-large-min").click()
         driver.find_element_by_id("searchName").send_keys(firstname + lastname)
-        driver.find_element_by_id("email").send_keys(email)
+        driver.find_element_by_id("email").send_keys(self.email)
         driver.find_element_by_xpath("//form/button").click()
         try: self.assertEqual("1", driver.find_element_by_id("savedsearchcount").text)
         except AssertionError as e: self.verificationErrors.append(str(e))
@@ -74,4 +76,14 @@ class WdSaveSearch(unittest.TestCase):
         self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
-    unittest.main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('url')
+    parser.add_argument('email')
+    parser.add_argument('--beta', action='store_true')
+    parser.add_argument('wp_login')
+    parser.add_argument('wp_password')
+    args = parser.parse_args()
+    test = WdSaveSearch('test_wd_save_search')
+    test.inject(args)
+    result = unittest.TestResult()
+    test.run(result)
