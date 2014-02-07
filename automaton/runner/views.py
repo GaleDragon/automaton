@@ -18,15 +18,16 @@ def runner_view(request):
             if form.cleaned_data['beta']:
                 args += ["--beta", form.cleaned_data['wp_login'], form.cleaned_data['wp_password']]
             test_files = os.listdir("tests")
-            open_processes = list()
+            open_processes = dict()
             suite = TestProfile(runner=request.user)
             suite.save()
             for test in test_files:
                 if test[-3:] == ".py" and test[:2]=="wd":
                     process = subprocess.Popen(['python', os.path.join("tests", test)]+args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-                    open_processes.append(process)
-            for p in open_processes:
-                out, err = p.communicate()
+                    open_processes[test[:-3]] = process
+            for p in open_processes.keys():
+                process = open_processes[p]
+                out, err = process.communicate()
                 t = TestRunner(test_run=suite)
                 if err:
                     t.success = False
@@ -39,6 +40,17 @@ def runner_view(request):
                     else:
                         t.success = True
                         t.message = "Success."
+                try:
+                    f = open("tests/"+p+".txt").readlines()
+                    if len(f) == 0:
+                        raise IOError()
+                    t.name = f[0]
+                    t.description = f[1]
+                except IOError as io:
+                    t.name = "Undefined Name"
+                    t.description = "None"
+                except IndexError as i:
+                    t.description = "None"
                 t.save()
             return http.HttpResponseRedirect( reverse("results", kwargs={"index": suite.pk} ) )
         else:
@@ -52,5 +64,5 @@ def results(request, index=None):
     if not index:
         return http.HttpResponseBadRequest()
     profile = TestProfile.objects.get(pk=index, runner=request.user)
-    return render(request, "results.html", {"results":profile.testrunner_set})
+    return render(request, "results.html", {"results":profile.testrunner_set.all()})
 

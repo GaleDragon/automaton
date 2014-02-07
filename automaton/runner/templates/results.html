@@ -11,11 +11,11 @@
 			<th>Description</th>
 			<th>Results</th>
 		</tr>
-		{% for test in testcases %}
+		{% for test in results %}
 			<tr>
 				<td> {{ test.name }} </td>
 				<td> {{ test.description }} </td>
-				<td> {{ test.result }} </td>
+				<td> {{ test.success }} </td>
 			</tr>
 		{% endfor %}
 	</table>
