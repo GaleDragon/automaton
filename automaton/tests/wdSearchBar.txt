@@ -1,0 +1,2 @@
+Search
+This test confirms that the search bar is functioning and providing results

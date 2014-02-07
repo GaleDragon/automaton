@@ -1,0 +1,2 @@
+Registration
+This test runs a registration on the full site
