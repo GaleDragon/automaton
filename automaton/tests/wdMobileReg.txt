@@ -1,2 +1,2 @@
 Mobile Registration
-Description goes here.
+This test runs a registration on the mobile site

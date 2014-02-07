@@ -1,0 +1,2 @@
+Save Search
+This test confirms that a user can save a search

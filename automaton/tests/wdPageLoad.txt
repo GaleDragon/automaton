@@ -1,0 +1,2 @@
+Page Load
+This test confirms that key pages on the site load. Pages like, /buy, /sell, /agents, /guides, and results pages are tested.
