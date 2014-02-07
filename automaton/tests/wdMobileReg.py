@@ -1,5 +1,5 @@
 import sys, argparse
-#from selenium import webdriver
+from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, NoAlertPresentException
 import unittest
 from config import ConfigurationMixin, FailedTestException
