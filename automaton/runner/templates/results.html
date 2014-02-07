@@ -6,18 +6,22 @@
 <body>
 	Displaying results for: {{ user }}
 	<table>
-		<tr>
-			<th>Test Case</th>
-			<th>Description</th>
-			<th>Results</th>
-		</tr>
+        <thead>
+            <tr>
+                <th>Test Case</th>
+			    <th>Description</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
 		{% for test in results %}
 			<tr>
 				<td> {{ test.name }} </td>
 				<td> {{ test.description }} </td>
-				<td> {{ test.success }} </td>
+                <td> {{ test.message }} </td>
 			</tr>
 		{% endfor %}
+        </tbody>
 	</table>
 </body>
 </html>

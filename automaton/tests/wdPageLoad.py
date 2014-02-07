@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException, NoAlertPresentException
-from test_configs.config import ConfigurationMixin
+from config import ConfigurationMixin
 import unittest, time, re
 
 class PageLoad(unittest.TestCase, ConfigurationMixin):
@@ -20,7 +20,7 @@ class PageLoad(unittest.TestCase, ConfigurationMixin):
         driver = self.driver
         driver.get(self.base_url)
         driver.find_element_by_id("user_login").send_keys(self.wp_login)
-        driver.find_element_by_id("user_pass").send_keys(self.wp_password)
+        driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
         driver.find_element_by_id("wp-submit").click()
         driver.get(self.base_url + "/")
         self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "header.global-header"))
@@ -86,14 +86,5 @@ class PageLoad(unittest.TestCase, ConfigurationMixin):
         self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument('url')
-    parser.add_argument('email')
-    parser.add_argument('--beta', action='store_true')
-    parser.add_argument('wp_login')
-    parser.add_argument('wp_password')
-    args = parser.parse_args()
     test = PageLoad('test_page_load')
-    test.inject(args)
-    result = unittest.TestResult()
-    test.run(result)
+    test.inject()

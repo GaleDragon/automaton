@@ -1,5 +1,5 @@
 import sys, argparse
-from selenium import webdriver
+#from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
@@ -82,14 +82,5 @@ class Seller(unittest.TestCase, ConfigurationMixin):
         self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument('url')
-    parser.add_argument('email')
-    parser.add_argument('--beta', action='store_true')
-    parser.add_argument('wp_login')
-    parser.add_argument('wp_password')
-    args = parser.parse_args()
     test = Seller('test_seller')
-    test.inject(args)
-    result = unittest.TestResult()
-    test.run(result)
+    test.inject()

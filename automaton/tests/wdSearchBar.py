@@ -69,14 +69,5 @@ class WdSearchBar(unittest.TestCase, ConfigurationMixin):
         self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument('url')
-    parser.add_argument('email')
-    parser.add_argument('--beta', action='store_true')
-    parser.add_argument('wp_login')
-    parser.add_argument('wp_password')
-    args = parser.parse_args()
     test = WdSearchBar('test_wd_search_bar')
-    test.inject(args)
-    result = unittest.TestResult()
-    test.run(result)
+    test.inject()

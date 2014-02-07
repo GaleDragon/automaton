@@ -1,8 +1,8 @@
 import sys, argparse
-from selenium import webdriver
+#from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException, NoAlertPresentException
 import unittest
-from config import ConfigurationMixin
+from config import ConfigurationMixin, FailedTestException
 import string
 import random
 import names
@@ -73,14 +73,5 @@ class WdMobileReg(unittest.TestCase, ConfigurationMixin):
         self.assertEqual([], self.verificationErrors)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument('url')
-    parser.add_argument('email')
-    parser.add_argument('--beta', action='store_true')
-    parser.add_argument('wp_login')
-    parser.add_argument('wp_password')
-    args = parser.parse_args()
     test = WdMobileReg('test_wd_mobile_reg')
-    test.inject(args)
-    result = unittest.TestResult()
-    test.run(result)
+    test.inject()
