@@ -19,14 +19,12 @@ def runner_view(request):
                 args += ["--beta", form.cleaned_data['wp_login'], form.cleaned_data['wp_password']]
             test_files = os.listdir("tests")
             open_processes = list()
-            for test in test_files:
-                if test == "config.py":
-                    pass
-                elif test[-3:] == ".py":
-                    process = subprocess.Popen(['python', os.path.join("tests", test)]+args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-                    open_processes.append(process)
             suite = TestProfile(runner=request.user)
             suite.save()
+            for test in test_files:
+                if test[-3:] == ".py" and test[:2]=="wd":
+                    process = subprocess.Popen(['python', os.path.join("tests", test)]+args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                    open_processes.append(process)
             for p in open_processes:
                 out, err = p.communicate()
                 t = TestRunner(test_run=suite)

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="2568563110">
     <data-source source="LOCAL" name="Django default" uuid="3af324ff-a5dd-4454-a6fd-b4a0374615a3">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:boomtown</jdbc-url>
       <user-name>automaton</user-name>

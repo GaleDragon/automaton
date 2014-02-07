@@ -7,5 +7,5 @@ urlpatterns = patterns('runner.views',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'start$', 'runner_view', name="start"),
-    url(r'(?P<index>\d)/results', 'results', name="results"),
+    url(r'(?P<index>\d+)/results', 'results', name="results"),
 )

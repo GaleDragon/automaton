@@ -9,6 +9,8 @@ class TestProfile(models.Model):
 
 class TestRunner(models.Model):
     test_run = models.ForeignKey(TestProfile)
+    name = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
     done = models.BooleanField(default=False)
     success = models.BooleanField(default=False)
     message = models.TextField(null=True, blank=True)
