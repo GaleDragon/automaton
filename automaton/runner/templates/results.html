@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Automaton Results</title>
 </head>
 <body>
-
+	Displaying results for: {{ user }}
+	<table>
+		<tr>
+			<th>Test Case</th>
+			<th>Description</th>
+			<th>Results</th>
+		</tr>
+		{% for test in testcases %}
+			<tr>
+				<td> {{ test.name }} </td>
+				<td> {{ test.description }} </td>
+				<td> {{ test.result }} </td>
+			</tr>
+		{% endfor %}
+	</table>
 </body>
 </html>
