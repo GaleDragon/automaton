@@ -7,6 +7,11 @@ class TestProfile(models.Model):
     runner = models.ForeignKey(User)
     date_started = models.DateTimeField(auto_now_add=True)
 
+class TestFile(models.Model):
+    runner = models.ForeignKey('TestRunner')
+    name = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
+
 class TestRunner(models.Model):
     test_run = models.ForeignKey(TestProfile)
     name = models.CharField(max_length=255)

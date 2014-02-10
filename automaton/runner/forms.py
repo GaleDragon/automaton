@@ -55,9 +55,6 @@ class TestSuiteInitForm(forms.Form):
     wp_login = forms.CharField(required=False)
     wp_password = forms.CharField(required=False, widget=forms.PasswordInput())
 
-    # Place additional fields below using the same syntax above
-
-
     def clean(self):
         cleaned_data = super(TestSuiteInitForm, self).clean()
         production = cleaned_data['beta']
