@@ -38,6 +38,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runner/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runner/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -50,7 +59,7 @@
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/domain/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="9" selection-start="3659" selection-end="3659" vertical-scroll-proportion="0.5171674" vertical-offset="674" max-vertical-offset="1140">
+            <state line="91" column="46" selection-start="3959" selection-end="3959" vertical-scroll-proportion="0.7746781" vertical-offset="674" max-vertical-offset="1140">
               <folding />
             </state>
           </provider>
@@ -86,8 +95,8 @@
         <option value="$PROJECT_DIR$/tests/wdSearchBar.py" />
         <option value="$PROJECT_DIR$/tests/wdRegister.py" />
         <option value="$PROJECT_DIR$/tests/wdSellerForm.py" />
-        <option value="$PROJECT_DIR$/runner/urls.py" />
         <option value="$PROJECT_DIR$/domain/urls.py" />
+        <option value="$PROJECT_DIR$/runner/urls.py" />
         <option value="$PROJECT_DIR$/domain/views.py" />
       </list>
     </option>
@@ -687,13 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runner/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="47" selection-start="283" selection-end="283" vertical-scroll-proportion="0.25751072" vertical-offset="0" max-vertical-offset="466">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/wdMobileReg.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="29" selection-start="2638" selection-end="2638" vertical-scroll-proportion="1.1545064" vertical-offset="362" max-vertical-offset="1125">
@@ -715,6 +717,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/runner/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/runner/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="67" column="0" selection-start="2804" selection-end="2804" vertical-scroll-proportion="0.0" vertical-offset="537" max-vertical-offset="990">
@@ -724,7 +733,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/domain/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="9" selection-start="3659" selection-end="3659" vertical-scroll-proportion="0.5171674" vertical-offset="674" max-vertical-offset="1140">
+        <state line="91" column="46" selection-start="3959" selection-end="3959" vertical-scroll-proportion="0.7746781" vertical-offset="674" max-vertical-offset="1140">
           <folding />
         </state>
       </provider>

@@ -89,4 +89,4 @@ def callback_auth(request):
 @login_required
 def home(request):
     form = None
-    return HttpResponseRedirect( reverse('start') )
+    return HttpResponseRedirect( reverse('home') )
