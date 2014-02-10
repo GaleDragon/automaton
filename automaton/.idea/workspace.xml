@@ -41,25 +41,25 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runner/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runner/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="0" selection-start="2804" selection-end="2804" vertical-scroll-proportion="0.0" vertical-offset="537" max-vertical-offset="990">
+            <state line="8" column="45" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/domain/views.py">
+        <entry file="file://$PROJECT_DIR$/runner/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="46" selection-start="3959" selection-end="3959" vertical-scroll-proportion="0.7746781" vertical-offset="674" max-vertical-offset="1140">
+            <state line="18" column="98" selection-start="682" selection-end="682" vertical-scroll-proportion="0.33112583" vertical-offset="0" max-vertical-offset="1065">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/runner/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="63" selection-start="2097" selection-end="2097" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1035">
               <folding />
             </state>
           </provider>
@@ -81,12 +81,10 @@
         <option value="$PROJECT_DIR$/domain/fixtures/initial_data.json" />
         <option value="$PROJECT_DIR$/runner/async.py" />
         <option value="db-console:/37f1d7f9/3af324ff-a5dd-4454-a6fd-b4a0374615a3/" />
-        <option value="$PROJECT_DIR$/runner/forms.py" />
         <option value="$PROJECT_DIR$/tests/run_all.py" />
         <option value="$PROJECT_DIR$/automaton/settings.py" />
         <option value="$PROJECT_DIR$/runner/models.py" />
         <option value="$PROJECT_DIR$/tests/wdMobileReg.txt" />
-        <option value="$PROJECT_DIR$/runner/views.py" />
         <option value="$PROJECT_DIR$/runner/templates/results.html" />
         <option value="$PROJECT_DIR$/tests/config.py" />
         <option value="$PROJECT_DIR$/tests/wdMobileReg.py" />
@@ -98,6 +96,8 @@
         <option value="$PROJECT_DIR$/domain/urls.py" />
         <option value="$PROJECT_DIR$/runner/urls.py" />
         <option value="$PROJECT_DIR$/domain/views.py" />
+        <option value="$PROJECT_DIR$/runner/forms.py" />
+        <option value="$PROJECT_DIR$/runner/views.py" />
       </list>
     </option>
   </component>
@@ -605,7 +605,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/runner/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="31" selection-start="2086" selection-end="2112" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1080" />
+        <state line="58" column="31" selection-start="2086" selection-end="2112" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="1080">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runner/templates/runner.html">
@@ -626,11 +628,6 @@
     <entry file="file://$PROJECT_DIR$/domain/fixtures/initial_data.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="25" selection-start="722" selection-end="734" vertical-scroll-proportion="0.5096012" vertical-offset="0" max-vertical-offset="677" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runner/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="31" selection-start="2086" selection-end="2112" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="990" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/automaton/settings.py">
@@ -717,23 +714,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/domain/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="0" selection-start="3861" selection-end="3861" vertical-scroll-proportion="2.0922747" vertical-offset="0" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/runner/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+        <state line="8" column="45" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runner/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="63" selection-start="2097" selection-end="2097" vertical-scroll-proportion="0.0" vertical-offset="518" max-vertical-offset="1035">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/runner/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="2804" selection-end="2804" vertical-scroll-proportion="0.0" vertical-offset="537" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domain/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="46" selection-start="3959" selection-end="3959" vertical-scroll-proportion="0.7746781" vertical-offset="674" max-vertical-offset="1140">
+        <state line="18" column="98" selection-start="682" selection-end="682" vertical-scroll-proportion="0.33112583" vertical-offset="0" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
