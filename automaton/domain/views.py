@@ -80,8 +80,8 @@ def callback_auth(request):
         # Creates a new User from the info in the credentials.
         # Since the password will not be used to login (since the OAuth takes care of that),
         # we can set it to the SECRET_KEY and keep it like that.
-        new = User.objects.create_user(username, email=email, password=password)
-        Credential(id=new, credential=credentials).save()
+        #new = User.objects.create_user(username, email=email, password=password)
+        #Credential(id=new, credential=credentials).save()
         user = authenticate( username=username, password=password )
         login(request, user)
         return HttpResponseRedirect( reverse("home") )
@@ -89,4 +89,4 @@ def callback_auth(request):
 @login_required
 def home(request):
     form = None
-    return render(request, "home.html", {"runner-form": form})
+    return HttpResponseRedirect( reverse('start') )

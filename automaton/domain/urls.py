@@ -5,7 +5,7 @@ urlpatterns = patterns('domain.views',
     # url(r'^$', 'automaton.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
+    url(r'^$', 'home', name='home'),
     url(r'^oauth2callback$', 'callback_auth', name="auth_callback"),
     url(r'^login$', 'init_auth', name="login"),
-    url(r'^$', "home", name="home")
 )

@@ -6,6 +6,6 @@ urlpatterns = patterns('runner.views',
     # url(r'^$', 'automaton.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'start$', 'runner_view', name="start"),
+    url(r'start$', 'runner_view', name="home"),
     url(r'(?P<index>\d+)/results', 'results', name="results"),
 )
