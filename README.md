@@ -2,7 +2,9 @@ Automaton
 =========
 
 [Setting up the DB](#dbsettings)
+
 [Adding Tests](#testadd)
+
 [Adding to the Form](#formadd)
 
 <a name="dbsettings"/>  
