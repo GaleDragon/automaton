@@ -20,7 +20,9 @@ Adding Tests
 Where does the test go and what do I need?
 ------------------------------------------
 
-Adding tests to automaton is easy. All you need to do is navigate to the automaton/tests/ directory and drop a .py test case in. Make sure you also add a .txt file with the name and description you want displayed for the test on the results page.
+Adding tests to automaton is easy. All you need to do is navigate to the automaton/tests/ directory and drop a .py test case in. Make sure you also add a .txt file with the name and description you want displayed for the test on the results page. 
+
+Ex. If the test case is named wdRegister.py, the .txt file should be named wdRegister.txt
 
 The .txt should be formatted in 2 lines, with the first being the name and the second being the description.
 
