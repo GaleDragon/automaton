@@ -13,7 +13,6 @@ from django.db.models import Max
 def runner_view(request):
     if request.method == "POST":
         form = TestSuiteInitForm(request.POST)
-        form.clean()
 
         if form.is_valid():
             # These args will be called by the OS in subprocess.Popen, so arrange as necessary
