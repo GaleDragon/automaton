@@ -1,9 +1,13 @@
 Automaton  
 =========
-  
+
+[Setting up the DB](#dbsettings)
+[Adding Tests](#testadd)
+[Adding to the Form](#formadd)
+
+<a name="dbsettings"/>  
 Setting up the DB  
 =================
-
 ```  
 brew install postgresql  
 createuser -Pdr automaton  
@@ -14,6 +18,7 @@ createdb -U automaton boomtown
 ```  
 And the DB should be ready to rock.  
 
+<a name="testadd"/>
 Adding Tests
 ============
 
@@ -46,7 +51,7 @@ if __name__ == "__main__":
     test.inject()
 ```
 
-
+<a name="formadd"/>
 Adding more information to the form
 ===================================
 
