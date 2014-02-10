@@ -24,8 +24,8 @@ Adding tests to automaton is easy. All you need to do is navigate to the automat
 
 The .txt should be formatted in 2 lines, with the first being the name and the second being the description.
 
-1. <Test Case Name>
-2. <Test Case Description>
+1. Test Case Name
+2. Test Case Description
 
 What kind of modifications will my test case need?
 --------------------------------------------------
