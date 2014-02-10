@@ -7,6 +7,8 @@ Automaton
 
 [Adding to the Form](#formadd)
 
+[Common Errors (local)](#localerror)
+
 <a name="dbsettings"/>  
 Setting up the DB  
 =================
@@ -58,3 +60,25 @@ Adding more information to the form
 ===================================
 
 Adding more information to be pulled in will be a little bit more involved than adding a simple test case.
+
+<a name="localerror"/>
+Common local errors
+===================
+
+If you are running the project locally, in django's debug mode, you may run into a one of these. This section is meant for quick fixes to errors we encountered a lot. They may not represent the errors you actually encounter, or the cause of them, but it might be useful to start here if you encounter one that sounds similar.
+
+No such file or directory
+-------------------------
+
+Most of these are caused by running manage.py from the wrong directory. To solve this, always run manage.py from the directory it is located in, even though you may be able to run it from sub directories, or parent directories.
+
+Database conflicts
+------------------
+
+While testing we ran into this one a few times. The problem seems to be in django's syncdb method, which is called from manage.py. While it is supposed to be able to alter tables, it seems to only add new ones at the time of writing. You can solve this by manually dropping the tables you are having issues with, then running syncdb again. It will add the new updated tables back.
+
+I/O Errors
+----------
+
+We found a few of these as well, which were caused generally caused by running manage.py from the wrong location. As before, make sure that you always run manage.py from the directory you have it stored locally in.
+
