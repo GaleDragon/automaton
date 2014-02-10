@@ -1,0 +1,23 @@
+body
+{
+background-color: #2163C6; 
+font-size: 100%;
+color: lightgrey;
+font-family: Tahoma, Geneva, sans-serif;
+}
+
+table,td,th
+{
+border:3px solid #6391d7;
+}
+table
+{
+width:100%;
+border-collapse: collapse;
+}
+th
+{
+background-color: #17458a;
+color: orange;
+height:40px;
+}

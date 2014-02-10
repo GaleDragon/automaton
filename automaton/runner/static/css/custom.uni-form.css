@@ -32,9 +32,9 @@
    ------------------------------------------------------------------------------ */
 body{ background-color: #2163C6; font-size: 100%}
 
-h1{ color: #c68420; font-family: Verdana, Geneva, sans-serif; font-size: 2.5em }
+h1{ color: orange; font-family: Verdana, Geneva, sans-serif; font-size: 2.5em }
 
-.uniForm{ background: #2163C6; color: #ccc; font-family: Tahoma, Geneva, sans-serif }
+.uniForm{ background: #2163C6; color: lightgrey; font-family: Tahoma, Geneva, sans-serif }
     
     .uniForm legend{ font-weight: bold; font-size: 100%; margin: 0; padding: 1.5em 0; }
     
