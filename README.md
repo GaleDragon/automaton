@@ -38,11 +38,11 @@ In order to properly display the output in the results page, you will need to ma
 
 2. If your test requires a name field, automaton will not handle this. We suggest using generated names. We have been using [treyhunner's name module](https://github.com/treyhunner/names) for our name field needs so far.
 
-3. In the ```main``` function of your test case, you will need to define the test, and call the config inject method. Here is an example for the wdRegister test case.
+3. In the ```main``` method of your test case, you will need to define the test, and call the config inject function. Here is an example for the wdRegister test case.
 
 ```
 if __name__ == "__main__":
-    test = RegWD('test_reg_w_d')
+    test = RegWD('test_reg_w_d') #this is the method that runs the test
     test.inject()
 ```
 
