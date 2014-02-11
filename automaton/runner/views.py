@@ -13,10 +13,15 @@ from django.db.models import Max
 def runner_view(request):
     if request.method == "POST":
         form = TestSuiteInitForm(request.POST)
+
         if form.is_valid():
+            # These args will be called by the OS in subprocess.Popen, so arrange as necessary
+            # The cleaned_data will be a dictionary of keys with the same names as the form fields
             args = [form.cleaned_data['url'], form.cleaned_data['user_email']]
             if form.cleaned_data['beta']:
                 args += ["--beta", form.cleaned_data['wp_login'], form.cleaned_data['wp_password']]
+
+
             test_files = os.listdir("tests")
             open_processes = dict()
             suite = TestProfile(runner=request.user)

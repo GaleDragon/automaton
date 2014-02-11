@@ -1,0 +1,28 @@
+body
+{
+background-color: #2163C6; 
+font-size: 100%;
+color: lightgrey;
+font-family: Tahoma, Geneva, sans-serif;
+}
+
+table,td,th
+{
+border:2px solid silver;
+padding-left:10px;
+padding-right: 10px;
+padding-bottom: 7px;
+padding-top: 7px;
+}
+table
+{
+width:100%;
+border-collapse: collapse;
+}
+th
+{
+background-color: #17458a;
+color: orange;
+height:40px;
+}
+tr:nth-child(even) { background-color: #4d82d1; }
