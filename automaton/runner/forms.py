@@ -61,7 +61,7 @@ class TestSuiteInitForm(forms.Form):
         print production
         login = cleaned_data['wp_login']
         password = cleaned_data['wp_password']
-        if not production and not login and not password:
+        if not production and login = "" and password = "":
             raise forms.ValidationError("If the URL is a beta site then WordPress credentials are required.")
 
         return cleaned_data
