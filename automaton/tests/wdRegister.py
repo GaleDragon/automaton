@@ -33,7 +33,7 @@ class RegWD(unittest.TestCase, ConfigurationMixin):
             driver.find_element_by_id("user_login").send_keys(self.wp_login)
             driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
             driver.find_element_by_id("wp-submit").click()
-            driver.get(self.base_url + "results/")
+        driver.get(self.base_url + "results/")
         driver.find_element_by_css_selector("i.icon.icon-forward").click()
         driver.find_element_by_css_selector("i.icon.icon-cross-2").click()
         driver.find_element_by_css_selector("i.icon.icon-forward").click()
