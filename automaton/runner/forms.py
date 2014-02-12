@@ -57,8 +57,8 @@ class TestSuiteInitForm(forms.Form):
 
     def clean(self):
         cleaned_data = super(TestSuiteInitForm, self).clean()
-        production = bool( cleaned_data['beta'] == "False")
-        print production
+        cleaned_data['beta'] = eval( cleaned_data['beta'] )
+        production = not cleaned_data['beta']
         login = cleaned_data['wp_login']
         password = cleaned_data['wp_password']
         print cleaned_data
