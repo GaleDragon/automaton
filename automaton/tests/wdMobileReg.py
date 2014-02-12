@@ -22,7 +22,7 @@ class WdMobileReg(unittest.TestCase, ConfigurationMixin):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://beta.cobblestonegroup.com/"
+        #self.base_url = "http://beta.cobblestonegroup.com/"
         self.driver.set_window_size(960, 640)
         self.verificationErrors = []
         self.accept_next_alert = True
@@ -30,9 +30,10 @@ class WdMobileReg(unittest.TestCase, ConfigurationMixin):
     def test_wd_mobile_reg(self):
         driver = self.driver
         driver.get(self.base_url)
-        driver.find_element_by_id("user_login").send_keys(self.wp_login)
-        driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
-        driver.find_element_by_id("wp-submit").click()
+        if self.beta:
+            driver.find_element_by_id("user_login").send_keys(self.wp_login)
+            driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
+            driver.find_element_by_id("wp-submit").click()
         driver.get(self.base_url + "/m/home/#registerPanel")
         #driver.find_element_by_css_selector("a[title=\"Sign Up\"]").click()
         driver.find_element_by_id("reg-fname").clear()
