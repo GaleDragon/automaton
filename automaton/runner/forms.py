@@ -57,11 +57,11 @@ class TestSuiteInitForm(forms.Form):
 
     def clean(self):
         cleaned_data = super(TestSuiteInitForm, self).clean()
-        production = bool( not cleaned_data['beta'])
+        production = bool( cleaned_data['beta'] == "False")
         print production
         login = cleaned_data['wp_login']
         password = cleaned_data['wp_password']
-        if not production and login = "" and password = "":
+        print cleaned_data
+        if (not production) and (login == "" or password == ""):
             raise forms.ValidationError("If the URL is a beta site then WordPress credentials are required.")
-
         return cleaned_data

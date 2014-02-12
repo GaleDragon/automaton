@@ -70,4 +70,3 @@ def results(request, index=None):
         return http.HttpResponseBadRequest()
     profile = TestProfile.objects.get(pk=index, runner=request.user)
     return render(request, "results.html", {"results":profile.testrunner_set.all()})
-

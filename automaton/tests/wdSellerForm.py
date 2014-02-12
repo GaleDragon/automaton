@@ -26,16 +26,17 @@ class Seller(unittest.TestCase, ConfigurationMixin):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
         self.driver.set_window_size(1440, 900)
-        self.base_url = "http://beta.cobblestonegroup.com/"
+        #self.base_url = "http://beta.cobblestonegroup.com/"
         self.verificationErrors = []
         self.accept_next_alert = True
     
     def test_seller(self):
         driver = self.driver
         driver.get(self.base_url + "/")
-        driver.find_element_by_id("user_login").send_keys(self.wp_login)
-        driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
-        driver.find_element_by_id("wp-submit").click()
+        if self.beta:
+            driver.find_element_by_id("user_login").send_keys(self.wp_login)
+            driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
+            driver.find_element_by_id("wp-submit").click()
         driver.find_element_by_link_text("Finance").click()
         driver.find_element_by_link_text("Sell").click()
         driver.find_element_by_link_text("Contact Us").click()
