@@ -19,7 +19,7 @@ lastname = names.get_last_name()
 
 class RegWD(unittest.TestCase, ConfigurationMixin):
     def setUp(self):
-        self.base_url = "http://beta.cobblestonegroup.com/"
+        #self.base_url = "http://beta.cobblestonegroup.com/"
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
         self.driver.set_window_size(1440, 900)
@@ -29,10 +29,11 @@ class RegWD(unittest.TestCase, ConfigurationMixin):
     def test_reg_w_d(self):
         driver = self.driver
         driver.get(self.base_url)
-        driver.find_element_by_id("user_login").send_keys(self.wp_login)
-        driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
-        driver.find_element_by_id("wp-submit").click()
-        driver.get(self.base_url + "results/")
+        if self.beta:
+            driver.find_element_by_id("user_login").send_keys(self.wp_login)
+            driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
+            driver.find_element_by_id("wp-submit").click()
+            driver.get(self.base_url + "results/")
         driver.find_element_by_css_selector("i.icon.icon-forward").click()
         driver.find_element_by_css_selector("i.icon.icon-cross-2").click()
         driver.find_element_by_css_selector("i.icon.icon-forward").click()

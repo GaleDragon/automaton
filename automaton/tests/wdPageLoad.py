@@ -11,7 +11,7 @@ class PageLoad(unittest.TestCase, ConfigurationMixin):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
-        self.base_url = "http://beta.cobblestonegroup.com/"
+        #self.base_url = "http://beta.cobblestonegroup.com/"
         self.driver.set_window_size(1440, 900)
         self.verificationErrors = []
         self.accept_next_alert = True
@@ -19,9 +19,10 @@ class PageLoad(unittest.TestCase, ConfigurationMixin):
     def test_page_load(self):
         driver = self.driver
         driver.get(self.base_url)
-        driver.find_element_by_id("user_login").send_keys(self.wp_login)
-        driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
-        driver.find_element_by_id("wp-submit").click()
+        if self.beta:
+            driver.find_element_by_id("user_login").send_keys(self.wp_login)
+            driver.find_element_by_id("user_pass").send_keys(self.wp_pass)
+            driver.find_element_by_id("wp-submit").click()
         driver.get(self.base_url + "/")
         self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "header.global-header"))
         self.assertTrue(self.is_element_present(By.CSS_SELECTOR, "div.global-footer-inner.inner"))
