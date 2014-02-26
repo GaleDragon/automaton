@@ -14,7 +14,7 @@ google-api-python-client==1.2
 httplib2==0.8
 kombu==3.0.10
 lockfile==0.9.1
--e git+git@github.com:treyhunner/names.git@e8f099c54dc9cb6f8015daf69892e3ad0440c172#egg=names-master
+git+https://github.com/treyhunner/names.git
 pytz==2013.9
 selenium==2.39.0
 simplejson==3.3.2
