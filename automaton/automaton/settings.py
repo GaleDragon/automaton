@@ -61,7 +61,7 @@ WSGI_APPLICATION = 'automaton.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': "boomtown",
         'USER': 'automaton',
         'PASSWORD': 'boomtown'

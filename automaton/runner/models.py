@@ -14,3 +14,4 @@ class TestRunner(models.Model):
     done = models.BooleanField(default=False)
     success = models.BooleanField(default=False)
     message = models.TextField(null=True, blank=True)
+

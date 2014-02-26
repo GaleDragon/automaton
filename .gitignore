@@ -2,3 +2,5 @@
 .idea
 
 automaton/domain/google_api
+
+automaton/automaton/settings.py
