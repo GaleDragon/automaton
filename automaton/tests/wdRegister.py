@@ -20,7 +20,7 @@ lastname = names.get_last_name()
 class RegWD(unittest.TestCase, ConfigurationMixin):
     def setUp(self):
         #self.base_url = "http://beta.cobblestonegroup.com/"
-        self.driver = webdriver.Firefox()
+        self.driver = webdriver.Remote(desired_capabilities=webdriver.DesiredCapabilities.HTMLUNIT)
         self.driver.implicitly_wait(30)
         self.driver.set_window_size(1440, 900)
         self.verificationErrors = []
