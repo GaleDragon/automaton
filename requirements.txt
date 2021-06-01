@@ -18,5 +18,5 @@ git+https://github.com/treyhunner/names.git
 pytz==2013.9
 selenium==2.39.0
 simplejson==3.3.2
-urllib3==1.7.1
+urllib3==1.26.5
 wsgiref==0.1.2
